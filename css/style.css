@@ -3327,7 +3327,7 @@ button,
   padding-bottom: 17px;
 }
 
-.trainers__overlay.focus-visible:focus {
+.trainers__overlay:hover {
   padding: 52px 35px 35px;
   background-color: rgba(16, 38, 84, 0.89);
   -webkit-box-pack: start;
@@ -3336,20 +3336,46 @@ button,
   outline: none;
 }
 
-.trainers__overlay.focus-visible:focus h3 {
+.trainers__overlay:hover h3 {
   margin-bottom: 0;
 }
 
-.trainers__overlay.focus-visible:focus p {
+.trainers__overlay:hover p {
   display: block;
   margin-bottom: 30px;
 }
 
-.trainers__overlay.focus-visible:focus ul {
+.trainers__overlay:hover ul {
   display: block;
 }
 
-.trainers__overlay.focus-visible:focus li {
+.trainers__overlay:hover li {
+  margin-bottom: 12px;
+}
+
+.trainers__overlay:focus {
+  padding: 52px 35px 35px;
+  background-color: rgba(16, 38, 84, 0.89);
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  outline: none;
+}
+
+.trainers__overlay:focus h3 {
+  margin-bottom: 0;
+}
+
+.trainers__overlay:focus p {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.trainers__overlay:focus ul {
+  display: block;
+}
+
+.trainers__overlay:focus li {
   margin-bottom: 12px;
 }
 
@@ -5574,7 +5600,7 @@ button,
   }
 
   .card {
-    padding: 56px 42px 54px;
+    padding: 55px 42px 54px;
     width: 290px;
   }
 
@@ -5652,8 +5678,12 @@ button,
     padding-right: 30px;
   }
 
-  .trainers__overlay.focus-visible:focus {
-    padding: 43px 35px 35px;
+  .trainers__overlay:hover {
+    padding: 40px 35px 30px;
+  }
+
+  .trainers__overlay:focus {
+    padding: 40px 35px 30px;
   }
 
   .trainers__overlay:active {
@@ -5676,7 +5706,7 @@ button,
 
   .trainers h2 {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   .benefits {
@@ -5692,7 +5722,7 @@ button,
 
   .benefits h2 {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .benefits__wrapper {
@@ -5711,7 +5741,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 39px;
+    row-gap: 40px;
   }
 
   .benefits__item {
@@ -5744,7 +5774,7 @@ button,
 
   .benefits__item p {
     text-align: center;
-    margin-top: 2px;
+    margin-top: 0;
   }
 
   .benefits__value {
@@ -5757,7 +5787,7 @@ button,
 
   .benefits__item--top h3 {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .benefits__item--top p {
@@ -5856,6 +5886,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .promo__description {
@@ -5863,7 +5895,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 42px;
     padding-bottom: 34px;
   }
 
@@ -5919,7 +5951,7 @@ button,
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 
   .accordion__element h3 {
@@ -5939,7 +5971,7 @@ button,
   }
 
   .accordion__button {
-    margin-top: 7px;
+    margin-top: 10px;
   }
 
   .accordion__content {
@@ -5960,7 +5992,7 @@ button,
   }
 
   .reviews h2 {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   .reviews__slider-wrapper {
@@ -6168,12 +6200,6 @@ button,
   }
 }
 
-@media (hover: hover) and (max-width: 767px) {
-  .trainers__overlay:hover:not(.focus-visible) {
-    padding: 43px 35px 35px;
-  }
-}
-
 @media (hover: hover) {
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
@@ -6181,32 +6207,6 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .trainers__overlay:hover:not(.focus-visible) {
-    padding: 52px 35px 35px;
-    background-color: rgba(16, 38, 84, 0.89);
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-    outline: none;
-  }
-
-  .trainers__overlay:hover:not(.focus-visible) h3 {
-    margin-bottom: 0;
-  }
-
-  .trainers__overlay:hover:not(.focus-visible) p {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  .trainers__overlay:hover:not(.focus-visible) ul {
-    display: block;
-  }
-
-  .trainers__overlay:hover:not(.focus-visible) li {
-    margin-bottom: 12px;
   }
 
   .contacts__wrapper a:hover:not(.focus-visible) {
