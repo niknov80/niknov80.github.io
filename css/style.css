@@ -1626,7 +1626,20 @@ button,
 
 .btn--faq.is-active {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+
+.btn--faq.is-active:hover {
   color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.btn--faq.is-active:focus {
+  color: #ffffff;
+  outline: none;
+  border: none;
 }
 
 .btn--accordion {
@@ -2722,6 +2735,7 @@ button,
 
 .footer__logo {
   margin-top: 10px;
+  min-width: 86px;
 }
 
 .footer__logo:hover {
@@ -4846,6 +4860,7 @@ button,
 
   .footer__logo {
     margin-top: 3px;
+    min-width: 81px;
   }
 
   .site-nav {
@@ -5565,6 +5580,7 @@ button,
 
   .footer__logo {
     margin-top: 5px;
+    min-width: 67px;
   }
 
   .footer__social {
